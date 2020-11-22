@@ -1,0 +1,1 @@
+navbar-auth.blade.php
