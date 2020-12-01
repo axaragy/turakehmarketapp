@@ -1,0 +1,54 @@
+A.Kategori
+  -kategori
+  -nama kategori
+  -slug ([domainname]/kategori/gadgets)
+
+B.Produk
+  -nama produk
+  -relasi ke pemilik produk
+  -harga produk
+  -deskripsi
+  -kategori produk
+
+
+C.Galeri Produk
+  -foto produk
+  -relasi ke produk
+
+D.Cart
+  -relasi produk
+  -relasi user
+
+E.user
+  -nama
+  -email
+  -alamat1
+  -alamat2
+  -provinsi https://github.com/azishapidin/indoregion
+  -kota https://github.com/azishapidin/indoregion
+  -kode pos
+  -negara
+  -no hp
+  -nama toko
+  -kategori toko
+  -status toko
+
+
+F.Transaksi
+  -relasi ke user
+  -jumlah asuransi
+  -ongkir
+  -total
+  -status Transaksi(UNPAID,PENDING,SHIPPING,SUCCESS,FAILED)
+  -no resi
+
+
+G.Transaksi Detail
+  -relasi ke Transaksi
+  -relasi ke produk
+  -harga barang
+
+
+
+
+
